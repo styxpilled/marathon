@@ -1,5 +1,5 @@
 :root {
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 
   --brightness: 1;
 
@@ -130,8 +130,10 @@ body,
 #root {
 
   --color-accent-1: #c2fe0c;
+  --color-accent-2: #1f1820;
 
-  --color-text: var(--color-surface-800);
+
+  --color-text: 0 0 0;
   --text-opacity: 100%;
   --item-accent: var(--color-surface-500);
   --item-opacity: 100%;
