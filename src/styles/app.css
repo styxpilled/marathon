@@ -1,0 +1,179 @@
+:root {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+
+  --brightness: 1;
+
+  /* accent-regular: #2d8ceb rgb(45, 140, 235) hsl(210, 83%, 55%) */
+
+  /* --color-accent-400: 38 128 235;
+  --color-accent-500: 55 142 240;
+  --color-accent-600: 75 156 245;
+  --color-accent-700: 90 169 250; */
+
+  --color-primary-400: 51 51 51; /* <- hsl(0, 0%, 20%) */
+  --color-primary-500: 38 38 38; /* <- hsl(0, 0%, 15%) */
+  --color-primary-600: 26 26 26; /* <- hsl(0, 0%, 10%) */
+  --color-primary-700: 13 13 13; /* <- #hsl(0, 0%, 5%) */
+
+  /* success | #33ab84 */
+  --color-success-50: 224 242 237; /* ⬅ #e0f2ed */
+  --color-success-100: 214 238 230; /* ⬅ #d6eee6 */
+  --color-success-200: 204 234 224; /* ⬅ #cceae0 */
+  --color-success-300: 173 221 206; /* ⬅ #adddce */
+  --color-success-400: 112 196 169; /* ⬅ #70c4a9 */
+  --color-success-500: 51 171 132; /* ⬅ #33ab84 */
+  --color-success-600: 46 154 119; /* ⬅ #2e9a77 */
+  --color-success-700: 38 128 99; /* ⬅ #268063 */
+  --color-success-800: 31 103 79; /* ⬅ #1f674f */
+  --color-success-900: 25 84 65; /* ⬅ #195441 */
+  /* warning | #facc15 */
+  --color-warning-50: 254 247 220; /* ⬅ #fef7dc */
+  --color-warning-100: 254 245 208; /* ⬅ #fef5d0 */
+  --color-warning-200: 254 242 197; /* ⬅ #fef2c5 */
+  --color-warning-300: 253 235 161; /* ⬅ #fdeba1 */
+  --color-warning-400: 252 219 91; /* ⬅ #fcdb5b */
+  --color-warning-500: 250 204 21; /* ⬅ #facc15 */
+  --color-warning-600: 225 184 19; /* ⬅ #e1b813 */
+  --color-warning-700: 188 153 16; /* ⬅ #bc9910 */
+  --color-warning-800: 150 122 13; /* ⬅ #967a0d */
+  --color-warning-900: 123 100 10; /* ⬅ #7b640a */
+  /* error | #e34850 */
+  --color-error-50: 251 228 229; /* ⬅ #fbe4e5 */
+  --color-error-100: 249 218 220; /* ⬅ #f9dadc */
+  --color-error-200: 248 209 211; /* ⬅ #f8d1d3 */
+  --color-error-300: 244 182 185; /* ⬅ #f4b6b9 */
+  --color-error-400: 235 127 133; /* ⬅ #eb7f85 */
+  --color-error-500: 227 72 80; /* ⬅ #e34850 */
+  --color-error-600: 204 65 72; /* ⬅ #cc4148 */
+  --color-error-700: 170 54 60; /* ⬅ #aa363c */
+  --color-error-800: 136 43 48; /* ⬅ #882b30 */
+  --color-error-900: 111 35 39; /* ⬅ #6f2327 */
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  margin: 0;
+  scrollbar-width: thin;
+  color-scheme: light dark;
+}
+
+#root.dark {
+  /* accent */
+  --color-accent-50: 0 56 119;       /* <- #003877 */
+  --color-accent-100: 0 65 138;      /* <- #00418a */
+  --color-accent-200: 0 77 163;      /* <- #004da3 */
+  --color-accent-300: 0 89 194;      /* <- #0059c2 */
+  --color-accent-400: 3 103 224;     /* <- #0367e0 */
+  --color-accent-500: 19 121 243;    /* <- #1379f3 */
+  --color-accent-600: 52 143 244;    /* <- #348ff4 */
+  --color-accent-700: 84 163 246;    /* <- #54a3f6 */
+  --color-accent-800: 114 183 249;   /* <- #72b7f9 */
+  --color-accent-900: 143 202 252;   /* <- #8fcafc */
+  --color-accent-1000: 174 219 254;  /* <- #aedbfe */
+
+  /* surface */
+  --color-surface-50: 22 22 22;      /* <- #161616 */
+  --color-surface-75: 29 29 29;      /* <- #1d1d1d */
+  --color-surface-100: 33 33 33;     /* <- #232323 */
+  --color-surface-150: 35 35 35;     /* <- #262626 */
+  --color-surface-200: 40 40 40;     /* <- #282828 */
+  --color-surface-300: 63 63 63;     /* <- #3f3f3f */
+  --color-surface-400: 84 84 84;     /* <- #545454 */
+  --color-surface-500: 112 112 112;  /* <- #707070 */
+  --color-surface-600: 144 144 144;  /* <- #909090 */
+  --color-surface-700: 178 178 178;  /* <- #b2b2b2 */
+  --color-surface-800: 209 209 209;  /* <- #d1d1d1 */
+  --color-surface-900: 235 235 235;  /* <- #ebebeb */
+  --color-surface-1000: 255 255 255; /* <- #ffffff */
+
+  --color-surface-dark: var(--color-surface-100);
+  --color-surface-light: var(--color-surface-900);
+  color-scheme: dark;
+}
+
+#root.light {
+  /* accent */
+  --color-accent-50: 0 56 119;       /* <- #e0f2ff */
+  --color-accent-100: 0 65 138;      /* <- #cae8ff */
+  --color-accent-200: 0 77 163;      /* <- #b5deff */
+  --color-accent-300: 0 89 194;      /* <- #96cefd */
+  --color-accent-400: 3 103 224;     /* <- #78bbfa */
+  --color-accent-500: 19 121 243;    /* <- #59a7f6 */
+  --color-accent-600: 52 143 244;    /* <- #3892f3 */
+  --color-accent-700: 84 163 246;    /* <- #147af3 */
+  --color-accent-800: 114 183 249;   /* <- #0265dc */
+  --color-accent-900: 143 202 252;   /* <- #0054b6 */
+  --color-accent-1000: 174 219 254;  /* <- #004491 */
+
+  /* surface */
+  --color-surface-50: 255 255 255;   /* <- #ffffff */
+  --color-surface-75: 253 253 253;   /* <- #fdfdfd */
+  --color-surface-100: 248 248 248;  /* <- #f8f8f8 */
+  --color-surface-150: 240 240 240;  /* <- #f0f0f0 */
+  --color-surface-200: 228 228 228;  /* <- #e4e4e4 */
+  --color-surface-300: 230 230 230;  /* <- #e6e6e6 */
+  --color-surface-400: 213 213 213;  /* <- #d5d5d5 */
+  --color-surface-500: 177 177 177;  /* <- #b1b1b1 */
+  --color-surface-600: 144 144 144;  /* <- #909090 */
+  --color-surface-700: 109 109 109;  /* <- #6d6d6d */
+  --color-surface-800: 70 70 70;     /* <- #464646 */
+  --color-surface-900: 34 34 34;     /* <- #222222 */
+  --color-surface-1000: 0 0 0;       /* <- #000000 */
+
+  --color-surface-dark: var(--color-surface-900);
+  --color-surface-light: var(--color-surface-100);
+  color-scheme: light;
+}
+
+#root {
+
+  --color-accent-1: #c2fe0c;
+
+  --color-text: var(--color-surface-800);
+  --text-opacity: 100%;
+  --item-accent: var(--color-surface-500);
+  --item-opacity: 100%;
+
+  background-color: rgb(var(--color-surface-100));
+  color: rgb(var(--color-text) / var(--text-opacity));
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+*:focus-visible {
+  outline: rgb(var(--color-accent-400)) solid 2px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--color-surface-400)) transparent;
+}
+
+::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-surface-400));
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+button {
+  width: max-content;
+}
+
+a {
+  color: rgb(var(--color-text));
+}
+
+html, body {
+  min-height: 100%;
+  /* background-color: red; */
+}
