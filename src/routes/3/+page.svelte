@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Absolute from '$comp/Absolute.svelte';
+	import Moire from '$comp/backgrounds/Moire.svelte';
 	import CornerOutlineGradient from '$comp/containers/CornerOutlineGradient.svelte';
 </script>
 
@@ -28,9 +29,7 @@
 		<h3>SALVATION AWAITS</h3>
 		<h1>JERMA985 <span>STREAM MOMENTS</span></h1>
 	</div>
-	<div class="moire-outter">
-		<div class="moire-inner" />
-	</div>
+	<Moire />
 </div>
 
 <style>
@@ -52,38 +51,6 @@
 	.title {
 		max-width: 72rem;
 		z-index: 2;
-	}
-
-	.moire-outter {
-		--size: 15px;
-		--size-outter: calc(var(--size) * 2);
-		--size-bg: calc(var(--size) * 3);
-
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background: dimgray radial-gradient(var(--bg-color) var(--size-outter), var(--bg) 0) center /
-			var(--size-bg) var(--size-bg);
-		overflow: hidden;
-	}
-
-	.moire-inner {
-		position: absolute;
-		top: -50vw;
-		right: -50vh;
-		bottom: -50vw;
-		left: -50vh;
-		z-index: 1;
-		background: transparent radial-gradient(transparent var(--size), var(--bg-color) 0) center /
-			var(--size-bg) var(--size-bg);
-		animation: 15s rotate infinite ease-in-out;
-	}
-
-	@keyframes rotate {
-		to {
-			transform: rotate(90deg);
-		}
 	}
 
 	.mini {
