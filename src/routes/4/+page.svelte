@@ -1,9 +1,13 @@
 <script lang="ts">
 	import MoireCircle from '$comp/MoireCircle.svelte';
+	import ScalingSquare from '$comp/ScalingSquare.svelte';
+	import CornerOutline from '$comp/containers/CornerOutline.svelte';
 </script>
 
 <div class="root">
-	<MoireCircle />
+	<!-- <CornerOutline /> -->
+	<!-- <ScalingSquare /> -->
+	<!-- <MoireCircle /> -->
 	<!-- <div class="title">
 		<h3>SALVATION AWAITS</h3>
 		<h1>JERMA985 <span>STREAM MOMENTS</span></h1>
