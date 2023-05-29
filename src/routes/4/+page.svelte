@@ -6,10 +6,10 @@
 </script>
 
 <div class="root">
-	<BlockTransition backgrondColor="var(--color-accent-2)" foregroundColor="white" />
+	<!-- <BlockTransition backgrondColor="var(--color-accent-2)" foregroundColor="white" /> -->
 	<!-- <CornerOutline /> -->
 	<!-- <ScalingSquare /> -->
-	<!-- <MoireCircle /> -->
+	<MoireCircle />
 	<!-- <div class="title">
 		<h3>SALVATION AWAITS</h3>
 		<h1>JERMA985 <span>STREAM MOMENTS</span></h1>
