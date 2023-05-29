@@ -1,10 +1,12 @@
 <script lang="ts">
+	import BlockTransition from '$comp/BlockTransition.svelte';
 	import MoireCircle from '$comp/MoireCircle.svelte';
 	import ScalingSquare from '$comp/ScalingSquare.svelte';
 	import CornerOutline from '$comp/containers/CornerOutline.svelte';
 </script>
 
 <div class="root">
+	<BlockTransition backgrondColor="var(--color-accent-2)" foregroundColor="white" />
 	<!-- <CornerOutline /> -->
 	<!-- <ScalingSquare /> -->
 	<!-- <MoireCircle /> -->
